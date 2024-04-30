@@ -79,6 +79,7 @@ void registerArithmeticFunctions(const std::string& prefix) {
   registerFunction<sparksql::FloorFunction, int64_t, double>(
       {prefix + "floor"});
   registerFunction<HypotFunction, double, double, double>({prefix + "hypot"});
+  registerFunction<LnFunction, double, double, double>({prefix + "log"});
   registerFunction<sparksql::Log2Function, double, double>({prefix + "log2"});
   registerFunction<sparksql::Log10Function, double, double>({prefix + "log10"});
   registerRandFunctions(prefix);
